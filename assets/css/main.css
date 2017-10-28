@@ -1,0 +1,417 @@
+/* === General styles === */
+body {
+	margin-top: 50px;
+	font-family: 'Roboto' , sans-serif;
+	font-size: 15px;
+	background-color: #fafafa;
+}
+.raleway {
+	font-family: 'Raleway' , sans-serif;
+}
+.skyblue {
+	color: skyblue;
+}
+.skyblue-bg {
+	background-color: skyblue;
+}
+
+.modal-content {
+	background-color: #f5f5f5;
+}
+
+.btn:focus {
+	outline: none !important;
+}
+p {
+	margin: 0 0 15px;
+}
+a , a:hover {
+	text-decoration: none;
+}
+a {
+	color: skyblue;
+}
+a:hover {
+	color: #039be5;
+}
+
+
+/* === Global === */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	font-family: 'Raleway' , sans-serif;
+}
+h1 {
+	font-size: 3em;
+}
+h1,h2 {
+	margin: 0 0 40px;
+}
+h3 {
+	margin: 20px 0;
+}
+h4 {
+	font-size: 18px;
+}
+
+
+/* === LAYOUT === */
+#primary {
+	padding: 4em 0;
+}
+
+.feature-image {
+	width: 100%;
+	padding: 4em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.feature-image h1 {
+	text-align: center;
+	color: #fff;
+}
+
+
+
+/* === Hero === */
+#hero {
+	padding: 4em 0;
+	background: linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.5) ) , url('../img/hero-bg.jpg') center center no-repeat  ;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 500px;
+	color: #fafafa;
+
+}
+#hero .hero-text {
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+
+
+/* === optin === */
+#optin {
+	padding: 1em 0;
+	background-color: #333;
+	color: #fafafa;
+}
+#optin p {
+	margin-top: 10px;
+}
+#optin .subscribe {
+	margin-top: 5px;
+}
+
+
+/* === boost-income === */
+#boost-income {
+	padding: 5em 0;
+	background-color: #f5f5f5;
+}
+.section-header .title {
+	margin-top: 1em;
+}
+
+
+/* === who-benefits === */
+#who-benefits {
+	padding: 5em 0;
+	background-color: #fff;
+}
+
+
+/* === course-features === */
+#course-features {
+	padding: 4em 0;
+	background-color: #333;
+	color: #fff;
+}
+#course-features .section-header {
+	margin-bottom: 3em;
+}
+#course-features .title:after {
+	content: '';
+	display: block;
+	width: 80px;
+	height: 2px;
+	background-color: skyblue;
+	margin: 1em auto;
+}
+.feature {
+	margin-top: 2em;
+}
+
+
+/* === project-features === */
+#project-features {
+	padding: 5em 0;
+	background-color: #f5f5f5;
+
+}
+
+
+
+/* === video === */
+#video {
+	padding: 5em 0;
+	background: linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.5) ) , url('../img/video-bg.jpg') no-repeat top center fixed ;
+	background-size: cover;
+	color: #fff;
+}
+
+
+/* === kudos === */
+#kudos {
+	padding: 5em 0;
+}
+#kudos .title {
+	margin-bottom: 3em;
+}
+#kudos .testimonial {
+	margin-bottom: 3em;
+}
+#kudos .testimonial img {
+	width: 60%;
+    margin: 0 auto;
+}
+blockquote {
+	font-size: 16px;
+}
+blockquote cite {
+	display: block;
+	font-size: 14px;
+	color: #777;
+	margin-top: 1em;
+}
+
+
+/* === signup === */
+#signup {
+	padding: 5em 0;
+	background: linear-gradient( rgba(0,0,0,0.5) , rgba(0,0,0,0.5) ) , url('../img/signup.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+}
+#signup .title {
+	font-weight: normal;
+}
+#signup .title strong {
+	border-bottom: 2px solid skyblue;
+}
+
+
+/* ===footer === */
+footer {
+	padding: .5em 0;
+	background-color: #333;
+	color: #fff;
+}
+footer p {
+	margin: 0;
+}
+footer nav ,
+footer p {
+	padding-top: 1em;
+}
+footer li.signup-link a {
+	color: skyblue;
+}
+footer li.signup-link:hover a {
+	font-weight: bold;
+}
+footer .brand {
+	color: #ccc;
+	font-size: 18px;
+}
+footer a {
+	color: #fff;
+}
+footer a:link , footer:visited {
+	color: #fff;
+}
+footer a:hover {
+	color: skyblue;
+}
+
+
+
+/* === Media Queries for index page === */
+@media screen and (max-width: 768px) {
+	#video iframe {
+		height: 240px;
+	}
+	#kudos .testimonial img {
+	width: 40%;
+    margin-bottom: 1em;
+	}
+	footer nav .footer-menu li {
+		display: block;
+	}
+}
+
+
+
+/* =============== Blog Page ================= */
+.feature-image-default {
+	background: linear-gradient( rgba(0,0,0,0.4) , rgba(0,0,0,0.4) ) , url('../img/video-bg.jpg') no-repeat fixed;
+	background-size: cover;
+}
+
+.post , .widget , #comments {
+	position: relative;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin: 0 0 40px;
+	box-sizing: border-box;
+}
+.post header ,
+.post .post-excerpt ,
+.post .post-body ,
+#comments .comments-wrap {
+	padding: 20px;
+}
+.post header h3 ,
+.post header h1 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+.post header h1 {
+	font-size: 24px;
+}
+
+.post-image {
+	height: auto;
+}
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+
+.post-details i.fa {
+	padding-left: 10px;
+}
+.post-details i.fa:first-child {
+	padding-left: 0;
+}
+
+
+/* widgets */
+.widget {
+	padding: 20px;
+}
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ddd;
+}
+.widget ul li {
+	margin: 0 0 5px;
+}
+.widget ul li:hover {
+	position: relative;
+	left: 2px;
+}
+
+/* comments */
+.post-comments-badge {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: skyblue;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.post-comments-badge:hover {
+	background-color: #039be5;
+
+}
+
+.post-comments-badge i.fa {
+	display: block;
+	padding: 0;
+	margin-bottom: 3px;
+	font-size: 15px;
+}
+
+.post-comments-badge a {
+	font-size: 17px;
+	color: #fff;
+}
+
+#comments h3 {
+	text-align: center;
+}
+#comments h4 {
+	font-size: 1.3em;
+}
+#comments ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#comments ol li {
+	background-color: rgba( 0,0,0,0.02 );
+	padding: 10px 20px;
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.03);
+}
+
+#comments ol li ol.children {
+	padding: 0;
+	list-style: none;
+	font-size: 0.96em;
+}
+
+#leave-comment {
+	margin: 40px 0 0;
+	padding: 20px 0 0;
+	border-top: 1px solid #eee;
+}
+
+
+/* =============== Resourses Page ================= */
+
+.resource {
+	width: 33.33333333%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 768px) {
+	.resource {
+		width: 50%;
+
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.resource {
+		width: 100%;
+		
+	}
+}
+
+
+
+
+
+
